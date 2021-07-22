@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Porcentajes y Descuentos | Curso Practico JS</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="https://lh3.googleusercontent.com/proxy/3bXBV9wfYuBZG65HH0AHfmz8jlQ0ROIs7AeXCplWK9rAdkwfYFA6TssEgETHfhb9cfrNYVYvUdsJQW14jf--1WGWeQiI_Kd6-DT5Dsr3EksXloWUjk4ML9NoAkTA1TZg" width="100px" alt="Geometry" />
+      <h3>Porcentajes y Descuentos</h3>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Seccion Descuento de precios -->
+    <section class="container__section">
+      <h2 class="container__section--title">Descuento</h2>
+      <section class="container__section--calcular">
+        <div class="input__group">
+          $ <input type="number" id="price" placeholder="¿Precio del producto?">
+        </div>
+        <div class="input__group">
+          <input type="number" id="discount" placeholder="¿Descuento producto?"> %
+        </div>
+        <input class="button" type="button" value="Calcular" onclick="btnPriceOff()" />
+        <div class="container__section--table">
+          <table>
+            <tr>
+              <th align="left">Descuento</th>
+              <td align="right">
+                <label class="priceDiscount"></label>
+              </td>
+            </tr>
+            <tr>
+              <th align="left">A Pagar</th>
+              <td align="right">
+                <label class="priceToPay"></label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="/">Atrás</a>
+  </footer>
+  <script src="./script/discount.js"></script>
+</body>
+
+</html>

@@ -6,6 +6,9 @@ const areaCuadrado = (lado) => lado ** 2
 const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base
 const areaTriangulo = (base, altura) => (base * altura) / 2
 
+// Triangulo Isosceles
+const alturaTrianguloIsosceles = (lado, base) => Math.sqrt( (lado**2) - (base / 2)**2  ).toFixed(2)
+
 // Circulo
 const perimetroCirculo = (radio) => (radio * 2) * Math.PI
 const areaCirculo = (radio) => (radio ** 2) * Math.PI
@@ -49,8 +52,8 @@ const btnCuadrado = () => {
 
   let perimetro = perimetroCuadrado(lado)
   let area = areaCuadrado(lado)
-  document.querySelector('.perimetro__cuadrado').innerHTML = perimetro + ' cm'
-  document.querySelector('.area__cuadrado').innerHTML = area + ' cm²'
+  document.querySelector('.perimetro__cuadrado').innerHTML = perimetro.toFixed(2) + ' cm'
+  document.querySelector('.area__cuadrado').innerHTML = area.toFixed(2) + ' cm²'
 }
 
 const btnTriangulo = () => {
@@ -87,8 +90,8 @@ const btnTriangulo = () => {
   let perimetro = perimetroTriangulo(lado1, lado2, base)
   let area = areaTriangulo(base, altura)
 
-  document.querySelector('.perimetro__triangulo').innerHTML = perimetro + ' cm'
-  document.querySelector('.area__triangulo').innerHTML = area + ' cm²'
+  document.querySelector('.perimetro__triangulo').innerHTML = perimetro.toFixed(2) + ' cm'
+  document.querySelector('.area__triangulo').innerHTML = area.toFixed(2) + ' cm²'
 }
 
 const btnCirculo = () => {
