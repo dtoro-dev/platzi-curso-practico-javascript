@@ -1,8 +1,5 @@
 const priceOff = (price, discout) => {
-  let decimal = discout / 100
-  console.log(decimal)
-  let valueOff = price * decimal
-  console.log(valueOff)
+  let valueOff = price * porcentageToDecimal(discout)
   return valueOff
 }
 
