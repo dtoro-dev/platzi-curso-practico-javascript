@@ -1,12 +1,8 @@
-const priceOff = (price, discout) => {
-  let valueOff = price * porcentageToDecimal(discout)
-  return valueOff
-}
-
-const porcentageToDecimal = (porcentage) => {
-  return porcentage / 100
-}
-
+// Convertir porcentaje a decimal
+const porcentageToDecimal = (porcentage) => porcentage / 100
+// Calcular valor de descuento
+const priceOff = (price, discout) => price * porcentageToDecimal(discout)
+// Click para calcular valor de descuento y valor a pagar
 const btnPriceOff = () => {
   let price = document.querySelector('#price').value
   let discount = document.querySelector('#discount').value
