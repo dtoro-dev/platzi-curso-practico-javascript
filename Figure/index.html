@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/syle.css">
+  <title>Figuras Geométricas | Curso Practico JS</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="./asset/icons8-geometría-48.png" width="30px" alt="Geometry" />
+      <h2>Figuras</h2>
+    </div>
+    <div class="header__menu">
+      <select class="input__group select__figure">
+        <option value="cuadrado">Cuadrado</option>
+        <option value="triangulo">Triangulo</option>
+        <option value="circulo">Circulo</option>
+      </select>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Seccion Cuadrado -->
+    <section class="container__section section__cuadrado">
+      <h2 class="container__section--title">Cuadrado</h2>
+      <section class="container__section--measurements">
+        <div class="input__group">
+          <input type="number" id="lado" placeholder="¿Valor lado?"> cm
+        </div>
+        <input class="button" type="button" value="Calcular" onclick="btnCuadrado()" />
+        <div class="container__section--table">
+          <table>
+            <tr>
+              <th align="left">Perimetro</th>
+              <td align="right">
+                <label class="perimetro__cuadrado"></label>
+              </td>
+            </tr>
+            <tr>
+              <th align="left">Area</th>
+              <td align="right">
+                <label class="area__cuadrado"></label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <!-- Seccion Triangulo -->
+    <section class="container__section section__triangulo hide">
+      <h2 class="container__section--title">Triangulo</h2>
+      <section class="container__section--measurements">
+        <div class="input__group">
+          <input type="number" id="lado1" placeholder="¿Valor lado 1?"> cm
+        </div>
+        <div class="input__group">
+          <input type="number" id="lado2" placeholder="¿Valor lado 2?"> cm
+        </div>
+        <div class="input__group">
+          <input type="number" id="base" placeholder="¿Valor base?"> cm
+        </div>
+        <div class="input__group">
+          <input type="number" id="altura" placeholder="¿Valor altura?"> cm
+        </div>
+        <input class="button" type="button" value="Calcular" onclick="btnTriangulo()" />
+        <div class="container__section--table">
+          <table>
+            <tr>
+              <th align="left">Perimetro</th>
+              <td align="right">
+                <label class="perimetro__triangulo"></label>
+              </td>
+            </tr>
+            <tr>
+              <th align="left">Area</th>
+              <td align="right">
+                <label class="area__triangulo"></label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <!-- Seccion Circulo -->
+    <section class="container__section section__circulo hide">
+      <h2 class="container__section--title">Circulo</h2>
+      <section class="container__section--measurements">
+        <div class="input__group">
+          <input type="number" id="radio" placeholder="¿Valor radio?"> cm
+        </div>
+        <input class="button" type="button" value="Calcular" onclick="btnCirculo()" />
+        <div class="container__section--table">
+          <table>
+            <tr>
+              <th align="left">Perimetro</th>
+              <td align="right">
+                <label class="perimetro__circulo"></label>
+              </td>
+            </tr>
+            <tr>
+              <th align="left">Area</th>
+              <td align="right">
+                <label class="area__circulo"></label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <!-- Seccion Respuesta -->
+    <!-- <section class="container__section">
+      <h2 class="container__section--title">Perimetro</h2>
+      <div class="container__section--draw">
+
+      </div>
+    </section>
+  
+    <section class="container__section">
+      <h2 class="container__section--title">Area</h2>
+    </section> -->
+
+  </main>
+  <footer class="footer">
+    <a href="/">Atrás</a>
+  </footer>
+  <script src="./script/figure.js"></script>
+</body>
+
+</html>
